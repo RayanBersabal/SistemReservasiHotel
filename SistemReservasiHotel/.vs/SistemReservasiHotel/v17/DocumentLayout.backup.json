@@ -1,0 +1,274 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project\\SistemReservasiHotel\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|d:\\project\\sistemreservasihotel\\sistemreservasihotel\\controller\\kamarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|solutionrelative:sistemreservasihotel\\controller\\kamarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|D:\\Project\\SistemReservasiHotel\\sistemreservasihotel\\controller\\tamucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|solutionrelative:sistemreservasihotel\\controller\\tamucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|D:\\Project\\SistemReservasiHotel\\sistemreservasihotel\\model\\context\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|solutionrelative:sistemreservasihotel\\model\\context\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|D:\\Project\\SistemReservasiHotel\\sistemreservasihotel\\model\\entity\\reservasi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|solutionrelative:sistemreservasihotel\\model\\entity\\reservasi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|D:\\Project\\SistemReservasiHotel\\sistemreservasihotel\\model\\entity\\kamar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|solutionrelative:sistemreservasihotel\\model\\entity\\kamar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|D:\\Project\\SistemReservasiHotel\\sistemreservasihotel\\model\\entity\\fasilitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|solutionrelative:sistemreservasihotel\\model\\entity\\fasilitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|D:\\Project\\SistemReservasiHotel\\sistemreservasihotel\\model\\repository\\tamurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|solutionrelative:sistemreservasihotel\\model\\repository\\tamurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|D:\\Project\\SistemReservasiHotel\\sistemreservasihotel\\model\\repository\\reservasirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|solutionrelative:sistemreservasihotel\\model\\repository\\reservasirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|D:\\Project\\SistemReservasiHotel\\sistemreservasihotel\\model\\repository\\resepsionisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|solutionrelative:sistemreservasihotel\\model\\repository\\resepsionisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|D:\\Project\\SistemReservasiHotel\\sistemreservasihotel\\model\\repository\\kamarrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|solutionrelative:sistemreservasihotel\\model\\repository\\kamarrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|D:\\Project\\SistemReservasiHotel\\sistemreservasihotel\\model\\repository\\transaksirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|solutionrelative:sistemreservasihotel\\model\\repository\\transaksirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|D:\\Project\\SistemReservasiHotel\\sistemreservasihotel\\model\\repository\\fasilitasirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|solutionrelative:sistemreservasihotel\\model\\repository\\fasilitasirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|D:\\Project\\SistemReservasiHotel\\sistemreservasihotel\\model\\entity\\transaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|solutionrelative:sistemreservasihotel\\model\\entity\\transaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|D:\\Project\\SistemReservasiHotel\\sistemreservasihotel\\model\\entity\\resepsionis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|solutionrelative:sistemreservasihotel\\model\\entity\\resepsionis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|D:\\Project\\SistemReservasiHotel\\sistemreservasihotel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B55FB209-5C18-4002-ADBA-C9DF8F4C869A}|SistemReservasiHotel\\SistemReservasiHotel.csproj|solutionrelative:sistemreservasihotel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TamuRepository.cs",
+              "DocumentMoniker": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Repository\\TamuRepository.cs",
+              "RelativeDocumentMoniker": "SistemReservasiHotel\\Model\\Repository\\TamuRepository.cs",
+              "ToolTip": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Repository\\TamuRepository.cs",
+              "RelativeToolTip": "SistemReservasiHotel\\Model\\Repository\\TamuRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T12:05:40.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Fasilitas.cs",
+              "DocumentMoniker": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Entity\\Fasilitas.cs",
+              "RelativeDocumentMoniker": "SistemReservasiHotel\\Model\\Entity\\Fasilitas.cs",
+              "ToolTip": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Entity\\Fasilitas.cs",
+              "RelativeToolTip": "SistemReservasiHotel\\Model\\Entity\\Fasilitas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T12:00:13.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Kamar.cs",
+              "DocumentMoniker": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Entity\\Kamar.cs",
+              "RelativeDocumentMoniker": "SistemReservasiHotel\\Model\\Entity\\Kamar.cs",
+              "ToolTip": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Entity\\Kamar.cs",
+              "RelativeToolTip": "SistemReservasiHotel\\Model\\Entity\\Kamar.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T09:09:57.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Reservasi.cs",
+              "DocumentMoniker": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Entity\\Reservasi.cs",
+              "RelativeDocumentMoniker": "SistemReservasiHotel\\Model\\Entity\\Reservasi.cs",
+              "ToolTip": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Entity\\Reservasi.cs",
+              "RelativeToolTip": "SistemReservasiHotel\\Model\\Entity\\Reservasi.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T11:59:43.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DbContext.cs",
+              "DocumentMoniker": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Context\\DbContext.cs",
+              "RelativeDocumentMoniker": "SistemReservasiHotel\\Model\\Context\\DbContext.cs",
+              "ToolTip": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Context\\DbContext.cs",
+              "RelativeToolTip": "SistemReservasiHotel\\Model\\Context\\DbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T09:09:28.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TamuController.cs",
+              "DocumentMoniker": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Controller\\TamuController.cs",
+              "RelativeDocumentMoniker": "SistemReservasiHotel\\Controller\\TamuController.cs",
+              "ToolTip": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Controller\\TamuController.cs",
+              "RelativeToolTip": "SistemReservasiHotel\\Controller\\TamuController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T12:30:21.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "KamarController.cs",
+              "DocumentMoniker": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Controller\\KamarController.cs",
+              "RelativeDocumentMoniker": "SistemReservasiHotel\\Controller\\KamarController.cs",
+              "ToolTip": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Controller\\KamarController.cs",
+              "RelativeToolTip": "SistemReservasiHotel\\Controller\\KamarController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T12:33:16.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReservasiRepository.cs",
+              "DocumentMoniker": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Repository\\ReservasiRepository.cs",
+              "RelativeDocumentMoniker": "SistemReservasiHotel\\Model\\Repository\\ReservasiRepository.cs",
+              "ToolTip": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Repository\\ReservasiRepository.cs",
+              "RelativeToolTip": "SistemReservasiHotel\\Model\\Repository\\ReservasiRepository.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAEkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T12:07:37.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ResepsionisRepository.cs",
+              "DocumentMoniker": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Repository\\ResepsionisRepository.cs",
+              "RelativeDocumentMoniker": "SistemReservasiHotel\\Model\\Repository\\ResepsionisRepository.cs",
+              "ToolTip": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Repository\\ResepsionisRepository.cs",
+              "RelativeToolTip": "SistemReservasiHotel\\Model\\Repository\\ResepsionisRepository.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAcwEUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T12:06:21.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "KamarRepository.cs",
+              "DocumentMoniker": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Repository\\KamarRepository.cs",
+              "RelativeDocumentMoniker": "SistemReservasiHotel\\Model\\Repository\\KamarRepository.cs",
+              "ToolTip": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Repository\\KamarRepository.cs",
+              "RelativeToolTip": "SistemReservasiHotel\\Model\\Repository\\KamarRepository.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAqwEgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T09:11:17.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TransaksiRepository.cs",
+              "DocumentMoniker": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Repository\\TransaksiRepository.cs",
+              "RelativeDocumentMoniker": "SistemReservasiHotel\\Model\\Repository\\TransaksiRepository.cs",
+              "ToolTip": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Repository\\TransaksiRepository.cs",
+              "RelativeToolTip": "SistemReservasiHotel\\Model\\Repository\\TransaksiRepository.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAcwC4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T12:06:34.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FasilitasiRepository.cs",
+              "DocumentMoniker": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Repository\\FasilitasiRepository.cs",
+              "RelativeDocumentMoniker": "SistemReservasiHotel\\Model\\Repository\\FasilitasiRepository.cs",
+              "ToolTip": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Repository\\FasilitasiRepository.cs",
+              "RelativeToolTip": "SistemReservasiHotel\\Model\\Repository\\FasilitasiRepository.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAcwCkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T12:06:04.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Transaksi.cs",
+              "DocumentMoniker": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Entity\\Transaksi.cs",
+              "RelativeDocumentMoniker": "SistemReservasiHotel\\Model\\Entity\\Transaksi.cs",
+              "ToolTip": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Entity\\Transaksi.cs",
+              "RelativeToolTip": "SistemReservasiHotel\\Model\\Entity\\Transaksi.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T12:12:40.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Resepsionis.cs",
+              "DocumentMoniker": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Entity\\Resepsionis.cs",
+              "RelativeDocumentMoniker": "SistemReservasiHotel\\Model\\Entity\\Resepsionis.cs",
+              "ToolTip": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Model\\Entity\\Resepsionis.cs",
+              "RelativeToolTip": "SistemReservasiHotel\\Model\\Entity\\Resepsionis.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T11:59:20.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Program.cs",
+              "RelativeDocumentMoniker": "SistemReservasiHotel\\Program.cs",
+              "ToolTip": "D:\\Project\\SistemReservasiHotel\\SistemReservasiHotel\\Program.cs",
+              "RelativeToolTip": "SistemReservasiHotel\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAApwBIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T15:44:03.457Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
