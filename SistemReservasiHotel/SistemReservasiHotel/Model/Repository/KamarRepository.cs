@@ -24,14 +24,14 @@ namespace SistemReservasiHotel.Model.Repository
         public int Create(Kamar kamar)
         {
             int result = 0;
-            string sql = @"INSERT INTO kamar (IdKamar, NoKamar, TipeKamar, TamuId) 
-                           VALUES (@IdKamar, @NoKamar, @TipeKamar, @TamuId)";
+            string sql = @"INSERT INTO kamar (IdKamar, NoKamar, TipeKamar, IdTamu) 
+                           VALUES (@IdKamar, @NoKamar, @TipeKamar, @IdTamu)";
             using (MySqlCommand cmd = new MySqlCommand(sql, _conn))
             {
                 cmd.Parameters.AddWithValue("@IdKamar", kamar.IdKamar);
                 cmd.Parameters.AddWithValue("@NoKamar", kamar.NoKamar);
                 cmd.Parameters.AddWithValue("@TipeKamar", kamar.TipeKamar);
-                cmd.Parameters.AddWithValue("@TamuId", kamar.TamuId);
+                cmd.Parameters.AddWithValue("@TamuId", kamar.IdTamu);
 
                 try
                 {
@@ -48,7 +48,7 @@ namespace SistemReservasiHotel.Model.Repository
         public List<Kamar> ReadAll()
         {
             List<Kamar> list = new List<Kamar>();
-            string sql = @"SELECT IdKamar, NoKamar, TipeKamar, TamuId FROM kamar";
+            string sql = @"SELECT IdKamar, NoKamar, TipeKamar, IdTamu FROM kamar";
             using (MySqlCommand cmd = new MySqlCommand(sql, _conn))
             {
                 using (MySqlDataReader reader = cmd.ExecuteReader())
@@ -57,10 +57,10 @@ namespace SistemReservasiHotel.Model.Repository
                     {
                         Kamar kamar = new Kamar
                         {
-                            IdKamar = reader["IdKamar"].ToString(),
-                            NoKamar = Convert.ToInt32(reader["NoKamar"]),
+                            IdKamar = Convert.ToInt32(reader["IdKamar"]),
+                            NoKamar = reader["NoKamar"].ToString(),
                             TipeKamar = reader["TipeKamar"].ToString(),
-                            TamuId = Convert.ToInt32(reader["TamuId"])
+                            IdTamu = Convert.ToInt32(reader["IdTamu"])
                         };
                         list.Add(kamar);
                     }
@@ -69,6 +69,49 @@ namespace SistemReservasiHotel.Model.Repository
             return list;
         }
 
-        // Method untuk Update dan Delete bisa ditambahkan dengan cara yang sama.
+        // Update Kamar
+        public int Update(Kamar kamar)
+        {
+            int result = 0;
+            string sql = @"UPDATE kamar 
+                           SET IdKamar = @IdKamar, NoKamar = @NoKamar, TipeKamar = @TipeKamar, IdTamu = @IdTamu 
+                           WHERE IdKamar = @IdKamar";
+            using (MySqlCommand cmd = new MySqlCommand(sql, _conn))
+            {
+                //cmd.Parameters.AddWithValue("@IdKamar", kamar.IdKamar);
+                cmd.Parameters.AddWithValue("@NoKamar", kamar.NoKamar);
+                cmd.Parameters.AddWithValue("@TipeKamar", kamar.TipeKamar);
+                cmd.Parameters.AddWithValue("@IdTamu", kamar.IdTamu);
+
+                try
+                {
+                    result = cmd.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    System.Diagnostics.Debug.Print("Update Tamu error: {0}", ex.Message);
+                }
+            }
+            return result;
+        }
+        public int Delete(int IdKamar)
+        {
+            int result = 0;
+            string sql = @"DELETE FROM tamu WHERE IdKamar = @IdKamar";
+            using (MySqlCommand cmd = new MySqlCommand(sql, _conn))
+            {
+                cmd.Parameters.AddWithValue("@IdKamar", "%%" + IdKamar + "%");
+
+                try
+                {
+                    result = cmd.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    System.Diagnostics.Debug.Print("Delete Kamar error: {0}", ex.Message);
+                }
+            }
+            return result;
+        }
     }
 }

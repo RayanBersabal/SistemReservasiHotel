@@ -9,7 +9,7 @@ namespace SistemReservasiHotel.Model.Entity
     public class Resepsionis
     {
         public int IdResepsionis { get; set; }
-        public string NamePetugas { get; set; }
+        public string NamaPetugas { get; set; }
         public int NoHp { get; set; }
         public string  Email { get; set; }
     }

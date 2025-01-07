@@ -8,9 +8,9 @@ namespace SistemReservasiHotel.Model.Entity
 {
     public class Kamar
     {
-        public string IdKamar { get; set; }
-        public int NoKamar { get; set; }
+        public int IdKamar { get; set; }
+        public string NoKamar { get; set; }
         public string TipeKamar { get; set; }
-        public int TamuId { get; set; }
+        public int IdTamu { get; set; }
     }
 }

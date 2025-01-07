@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using SistemReservasiHotel.Model.Context;
 using SistemReservasiHotel.Model.Entity;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace SistemReservasiHotel.Model.Repository
 {
@@ -23,10 +24,11 @@ namespace SistemReservasiHotel.Model.Repository
         public int Create(Tamu tamu)
         {
             int result = 0;
-            string sql = @"INSERT INTO tamu (NamaTamu, NoHp, Email, Alamat) 
-                           VALUES (@NamaTamu, @NoHp, @Email, @Alamat)";
+            string sql = @"INSERT INTO tamu (IdTamu, NamaTamu, NoHp, Email, Alamat) 
+                           VALUES (@Idtamu, @NamaTamu, @NoHp, @Email, @Alamat)";
             using (MySqlCommand cmd = new MySqlCommand(sql, _conn))
             {
+                cmd.Parameters.AddWithValue("@IdTamu", tamu.IdTamu);
                 cmd.Parameters.AddWithValue("@NamaTamu", tamu.NamaTamu);
                 cmd.Parameters.AddWithValue("@NoHp", tamu.NoHp);
                 cmd.Parameters.AddWithValue("@Email", tamu.Email);
@@ -51,20 +53,18 @@ namespace SistemReservasiHotel.Model.Repository
             string sql = @"SELECT IdTamu, NamaTamu, NoHp, Email, Alamat FROM tamu";
             using (MySqlCommand cmd = new MySqlCommand(sql, _conn))
             {
-                using (MySqlDataReader reader = cmd.ExecuteReader())
+                using (MySqlDataReader dtr = cmd.ExecuteReader())
                 {
-                    while (reader.Read())
-                    {
-                        Tamu tamu = new Tamu
+                        while (dtr.Read())
                         {
-                            IdTamu = Convert.ToInt32(reader["IdTamu"]),
-                            NamaTamu = reader["NamaTamu"].ToString(),
-                            NoHp = reader["NoHp"].ToString(),
-                            Email = reader["Email"].ToString(),
-                            Alamat = reader["Alamat"].ToString()
-                        };
-                        list.Add(tamu);
-                    }
+                            Tamu tamu = new Tamu();
+                            tamu.IdTamu = Convert.ToInt32(dtr["IdTamu"]);
+                            tamu.NamaTamu = dtr["NamaTamu"].ToString();
+                            tamu.NoHp = dtr["NoHp"].ToString();
+                            tamu.Email = dtr["Email"].ToString();
+                            tamu.Alamat = dtr["Alamat"].ToString();
+                            list.Add(tamu);
+                        }
                 }
             }
             return list;
@@ -79,11 +79,11 @@ namespace SistemReservasiHotel.Model.Repository
                            WHERE IdTamu = @IdTamu";
             using (MySqlCommand cmd = new MySqlCommand(sql, _conn))
             {
+                //cmd.Parameters.AddWithValue("@IdTamu", tamu.IdTamu);
                 cmd.Parameters.AddWithValue("@NamaTamu", tamu.NamaTamu);
                 cmd.Parameters.AddWithValue("@NoHp", tamu.NoHp);
                 cmd.Parameters.AddWithValue("@Email", tamu.Email);
                 cmd.Parameters.AddWithValue("@Alamat", tamu.Alamat);
-                cmd.Parameters.AddWithValue("@IdTamu", tamu.IdTamu);
 
                 try
                 {
@@ -98,13 +98,13 @@ namespace SistemReservasiHotel.Model.Repository
         }
 
         // Delete a Tamu
-        public int Delete(int tamuId)
+        public int Delete(int IdTamu)
         {
             int result = 0;
             string sql = @"DELETE FROM tamu WHERE IdTamu = @IdTamu";
             using (MySqlCommand cmd = new MySqlCommand(sql, _conn))
             {
-                cmd.Parameters.AddWithValue("@IdTamu", tamuId);
+                cmd.Parameters.AddWithValue("@IdTamu", "%%" + IdTamu + "%");
 
                 try
                 {
@@ -118,31 +118,38 @@ namespace SistemReservasiHotel.Model.Repository
             return result;
         }
 
-        // Get a specific Tamu by ID
-        public Tamu GetById(int tamuId)
+        
+        public  List<Tamu> ReadByNama(string NamaTamu)
         {
-            Tamu tamu = null;
-            string sql = @"SELECT IdTamu, NamaTamu, NoHp, Email, Alamat FROM tamu WHERE IdTamu = @IdTamu";
-            using (MySqlCommand cmd = new MySqlCommand(sql, _conn))
+            List<Tamu> list = new List<Tamu>();
+            try
             {
-                cmd.Parameters.AddWithValue("@IdTamu", tamuId);
-
-                using (MySqlDataReader reader = cmd.ExecuteReader())
+                string sql = @"SELECT IdTamu, NamaTamu, NoHp, Email, Alamat FROM tamu WHERE NamaTamu = @NamaTamu";
+                using (MySqlCommand cmd = new MySqlCommand(sql, _conn))
                 {
-                    if (reader.Read())
+                    cmd.Parameters.AddWithValue("@NamaTamu", "%" + NamaTamu + "%");
+
+                    using (MySqlDataReader dtr = cmd.ExecuteReader())
                     {
-                        tamu = new Tamu
+                        while (dtr.Read())
                         {
-                            IdTamu = Convert.ToInt32(reader["IdTamu"]),
-                            NamaTamu = reader["NamaTamu"].ToString(),
-                            NoHp = reader["NoHp"].ToString(),
-                            Email = reader["Email"].ToString(),
-                            Alamat = reader["Alamat"].ToString()
-                        };
+                            Tamu tamu = new Tamu();
+                            tamu.IdTamu = Convert.ToInt32(dtr["IdTamu"]);
+                            tamu.NamaTamu = dtr["NamaTamu"].ToString();
+                            tamu.NoHp = dtr["NoHp"].ToString();
+                            tamu.Email = dtr["Email"].ToString();
+                            tamu.Alamat = dtr["Alamat"].ToString();
+                            list.Add(tamu);
+                        }
                     }
                 }
             }
-            return tamu;
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.Print("GetById error: {0}", ex.Message);
+               
+            }
+            return list;
         }
     }
 }

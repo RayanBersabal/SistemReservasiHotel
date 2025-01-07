@@ -22,11 +22,12 @@ namespace SistemReservasiHotel.Model.Repository
         public int Create(Resepsionis resepsionis)
         {
             int result = 0;
-            string sql = @"INSERT INTO resepsionis (NamePetugas, NoHp, Email) 
+            string sql = @"INSERT INTO resepsionis (IdResepsionis, NamaPetugas, NoHp, Email) 
                            VALUES (@NamePetugas, @NoHp, @Email)";
             using (MySqlCommand cmd = new MySqlCommand(sql, _conn))
             {
-                cmd.Parameters.AddWithValue("@NamePetugas", resepsionis.NamePetugas);
+                cmd.Parameters.AddWithValue("@IdPetugas", resepsionis.IdResepsionis);
+                cmd.Parameters.AddWithValue("@NamePetugas", resepsionis.NamaPetugas);
                 cmd.Parameters.AddWithValue("@NoHp", resepsionis.NoHp);
                 cmd.Parameters.AddWithValue("@Email", resepsionis.Email);
 
@@ -45,19 +46,19 @@ namespace SistemReservasiHotel.Model.Repository
         public List<Resepsionis> ReadAll()
         {
             List<Resepsionis> list = new List<Resepsionis>();
-            string sql = @"SELECT IdResepsionis, NamePetugas, NoHp, Email FROM resepsionis";
+            string sql = @"SELECT IdResepsionis, NamaPetugas, NoHp, Email FROM resepsionis";
             using (MySqlCommand cmd = new MySqlCommand(sql, _conn))
             {
-                using (MySqlDataReader reader = cmd.ExecuteReader())
+                using (MySqlDataReader dtr = cmd.ExecuteReader())
                 {
-                    while (reader.Read())
+                    while (dtr.Read())
                     {
                         Resepsionis resepsionis = new Resepsionis
                         {
-                            IdResepsionis = Convert.ToInt32(reader["IdResepsionis"]),
-                            NamePetugas = reader["NamePetugas"].ToString(),
-                            NoHp = Convert.ToInt32(reader["NoHp"]),
-                            Email = reader["Email"].ToString()
+                            IdResepsionis = Convert.ToInt32(dtr["IdResepsionis"]),
+                            NamaPetugas = dtr["NamaPetugas"].ToString(),
+                            NoHp = Convert.ToInt32(dtr["NoHp"]),
+                            Email = dtr["Email"].ToString()
                         };
                         list.Add(resepsionis);
                     }

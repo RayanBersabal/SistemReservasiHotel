@@ -30,7 +30,7 @@ namespace SistemReservasiHotel.Model.Context
             {
                 // atur ulang lokasi database yang disesuaikan dengan
                 // lokasi dan informasi database MySQL Anda
-                string connectionString = "Server=localhost; Database=reservasihotel; Uid=root; Pwd=password;";
+                string connectionString = "Server=localhost; Database=ReservasiHotel; Uid=root; Pwd=password;";
 
 
                 conn = new MySqlConnection(connectionString); // buat objek connection
